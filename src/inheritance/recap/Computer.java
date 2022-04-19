@@ -31,6 +31,7 @@ public class Computer {
         System.out.println("Computer is getting started!");
     }
 
+    // private -> default -> protected -> public
     public static void shutDown() {
         System.out.println("Computer is getting shut down!");
     }

@@ -23,4 +23,33 @@ public class Mac extends Computer {
     }
 
 
+    public static void boot() {
+        System.out.println("Mac is getting started!");
+    }
+
+    public static void shutDown() {
+        System.out.println("Mac is getting shut down!");
+    }
+
+    public static void runProgram(String programName) {
+        System.out.println("Mac is running " + programName + "!");
+    }
+
+    @Override
+    public String getKey(){
+        return super.getKey();
+    }
+
+    @Override
+    public String toString() {
+        return "Mac{" +
+                "versionOS='" + versionOS + '\'' +
+                ", cpuName='" + cpuName + '\'' +
+                ", motherBoard='" + motherBoard + '\'' +
+                ", hasScreen=" + hasScreen +
+                ", hasKeyboard=" + hasKeyboard +
+                ", memory=" + memory +
+                ", hasGarbageMagicMouse=" + hasGarbageMagicMouse +
+                '}';
+    }
 }

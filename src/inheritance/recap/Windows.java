@@ -22,8 +22,38 @@ public class Windows extends Computer {
     //methods
 
     public void cleanViruses(){
-        System.out.println("Cleaning the viruses!");
+        System.out.println("Windows the viruses!");
     }
 
+    public static void boot() {
+        System.out.println("Windows is getting started!");
+    }
 
+    // private -> default -> protected -> public
+    public static void shutDown() {
+        System.out.println("Windows is getting shut down!");
+    }
+
+    public static void runProgram(String programName) {
+        System.out.println("Windows is running " + programName + "!");
+    }
+
+    @Override
+    public String getKey() {
+        return super.getKey();
+    }
+
+    @Override
+    public String toString() {
+        return "Windows{" +
+                "versionOS='" + versionOS + '\'' +
+                ", cpuName='" + cpuName + '\'' +
+                ", motherBoard='" + motherBoard + '\'' +
+                ", hasScreen=" + hasScreen +
+                ", hasKeyboard=" + hasKeyboard +
+                ", memory=" + memory +
+                ", hasPaint=" + hasPaint +
+                ", hasViruses=" + hasViruses +
+                '}';
+    }
 }
